@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CbsStudent2.Migrations
 {
     [DbContext(typeof(CbsStudent2Context))]
-    [Migration("20220531084108_InitialCreate")]
+    [Migration("20220531122426_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,9 @@ namespace CbsStudent2.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Year")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ProfileId");

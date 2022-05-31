@@ -68,7 +68,7 @@ namespace CbsStudent2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProfileId,Name,About,Email")] Profile profile)
+        public async Task<IActionResult> Create([Bind("ProfileId,Name,About,Email,Year")] Profile profile)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace CbsStudent2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProfileId,Name,About,Email")] Profile profile)
+        public async Task<IActionResult> Edit(int id, [Bind("ProfileId,Name,About,Email,Year")] Profile profile)
         {
             if (id != profile.ProfileId)
             {

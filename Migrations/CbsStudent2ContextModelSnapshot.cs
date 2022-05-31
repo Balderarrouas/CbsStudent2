@@ -30,6 +30,9 @@ namespace CbsStudent2.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Year")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("ProfileId");
 
                     b.ToTable("Profile");

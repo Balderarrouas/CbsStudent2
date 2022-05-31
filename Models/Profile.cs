@@ -10,9 +10,15 @@ public class Profile{
 public int ProfileId { get; set; }
 
 [Display(Name = "Name Of Student")]
+[Required]
+[StringLength(50, MinimumLength = 2)]
 public string? Name { get; set; }
 public string? About { get; set; }
+[Required]
 public string? Email { get; set; }
+[Required]
+[Range(1, 8)]
+public string Year { get; set; }
 
 
 

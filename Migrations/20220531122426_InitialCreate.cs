@@ -16,7 +16,8 @@ namespace CbsStudent2.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     About = table.Column<string>(type: "TEXT", nullable: true),
-                    Email = table.Column<string>(type: "TEXT", nullable: true)
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    Year = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

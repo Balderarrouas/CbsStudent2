@@ -26,14 +26,16 @@ namespace CbsStudent2.Models
                     {
                         Name = "Johnny",
                         About =  "I am a student at cbs",
-                        Email = "Johnny@cbs.dk"
+                        Email = "Johnny@cbs.dk",
+                        Year = "1"
                     },
 
                     new Profile
                     {
                         Name = "Benny",
                         About = "I am also a student at cbs",
-                        Email = "Benny@cbs.dk"
+                        Email = "Benny@cbs.dk",
+                        Year = "2"
                         
                     }
                 );
