@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CbsStudent2.Models
 {
 
-public class Profile{
+public class Profile
+{
 
 [Key]
 public int ProfileId { get; set; }

@@ -4,6 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
+using CbsStudent2.Data;
+
+
+
 
 namespace CbsStudent2.Models
 {

@@ -6,9 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CbsStudent2.Models;
+using CbsStudent2.Data;
+using Microsoft.AspNetCore.Authorization;
+
+
+
 
 namespace CbsStudent2.Controllers
 {
+
+    [Authorize]
     public class ProfileController : Controller
     {
         private readonly CbsStudent2Context _context;
@@ -18,7 +25,11 @@ namespace CbsStudent2.Controllers
             _context = context;
         }
 
+
+
+        
         // GET: Profile
+        [AllowAnonymous]
         public async Task<IActionResult> Index(string searchString)
         {
 
