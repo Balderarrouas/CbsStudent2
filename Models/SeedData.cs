@@ -19,7 +19,7 @@ namespace CbsStudent2.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<CbsStudent2Context>>()))
             {
-                // Look for any movies.
+                // Look for any Profiles.
                 if (context.Profile.Any())
                 {
                     return;   // DB has been seeded
@@ -44,7 +44,41 @@ namespace CbsStudent2.Models
                     }
                 );
                 context.SaveChanges();
+
+                if (context.Event.Any())
+                {
+                    return; //Db has been seedelideeded
+                }
+
+                context.Event.AddRange(
+                    new Event
+                    {
+
+                        EventName = "Juleaften",
+                        About = "Julehygge på kontoret",
+                        Location = "Kontor 2"
+                    },
+
+                    new Event
+                    {
+
+                        EventName = "Påskefrokost",
+                        About = "Haps Haps nu ska vi ha snaps",
+                        Location = "Kantinen"
+                    }
+
+
+
+                );
+                context.SaveChanges();
+
+
             }
+
+
+            
+
+
         }
     }
 }

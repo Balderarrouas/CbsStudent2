@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 builder.Services.AddDbContext<CbsStudent2Context>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("CbsStudent2Context") ?? throw new InvalidOperationException("Connection string 'CbsStudent2Context' not found.")));
 

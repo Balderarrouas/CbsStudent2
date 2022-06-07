@@ -18,5 +18,7 @@ namespace CbsStudent2.Data
         }
 
         public DbSet<CbsStudent2.Models.Profile>? Profile { get; set; }
+
+        public DbSet<CbsStudent2.Models.Event> Event { get; set; }
     }
 }

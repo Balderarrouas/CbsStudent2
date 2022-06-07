@@ -21,7 +21,7 @@ public string? Email { get; set; }
 [Range(1, 8)]
 public string Year { get; set; }
 
-
+public List<Event> Events { get; set; }
 
 }
 
